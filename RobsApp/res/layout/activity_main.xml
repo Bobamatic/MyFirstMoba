@@ -1,0 +1,92 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <!--
+    <RelativeLayout
+        android:id="@+id/GUIRelativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#00FF00" >
+
+       <ImageView
+            android:id="@+id/charImageView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp" />
+    </RelativeLayout>-->
+
+    <RelativeLayout
+        android:id="@+id/baseRelativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#000000" >
+
+        <ScrollView
+            android:id="@+id/LayoutVScroll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fadingEdge="none"
+            android:scrollbars="none" >
+
+            <HorizontalScrollView
+                android:id="@+id/LayoutHScroll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fadingEdge="none"
+                android:scrollbars="none" >
+
+                <RelativeLayout
+                    android:id="@+id/backRelativeLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <ImageView
+                        android:id="@+id/backImageView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/mobo_back" />
+                </RelativeLayout>
+            </HorizontalScrollView>
+        </ScrollView>
+
+        <com.RobD.Moba.MobaGamePanel
+            android:id="@+id/surfaceView1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+<!--         <ScrollView -->
+<!--             android:id="@+id/LayoutforeVScroll" -->
+<!--             android:layout_width="match_parent" -->
+<!--             android:layout_height="match_parent" -->
+<!--             android:fadingEdge="none" -->
+<!--             android:scrollbars="none" > -->
+
+<!--             <HorizontalScrollView -->
+<!--                 android:id="@+id/LayoutforeHScroll" -->
+<!--                 android:layout_width="wrap_content" -->
+<!--                 android:layout_height="wrap_content" -->
+<!--                 android:fadingEdge="none" -->
+<!--                 android:scrollbars="none" > -->
+
+<!--                 <RelativeLayout -->
+<!--                     android:id="@+id/foreRelativeLayout" -->
+<!--                     android:layout_width="match_parent" -->
+<!--                     android:layout_height="match_parent" > -->
+
+<!--                     <ImageView -->
+<!--                         android:id="@+id/foreImageView" -->
+<!--                         android:layout_width="wrap_content" -->
+<!--                         android:layout_height="wrap_content" -->
+<!--                         android:adjustViewBounds="true" -->
+<!--                         android:scaleType="fitXY" -->
+<!--                         android:src="@drawable/trees" /> -->
+<!--                 </RelativeLayout> -->
+<!--             </HorizontalScrollView> -->
+<!--         </ScrollView> -->
+    </RelativeLayout>
+
+</RelativeLayout>

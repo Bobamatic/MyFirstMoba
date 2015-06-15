@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <issue id="ClickableViewAccessibility">
+        <ignore path="src/com/RobD/Moba/FishGamePanel.java" />
+        <ignore path="src/com/RobD/Moba/MobaGamePanel.java" />
+    </issue>
+    <issue id="NewApi">
+        <ignore path="src/com/RobD/FishGame/FishGamePanel.java" />
+    </issue>
+</lint>
